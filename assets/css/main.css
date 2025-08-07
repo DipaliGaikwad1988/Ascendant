@@ -1170,5 +1170,5 @@ section#portfolio{
   /* Add your styles here */
 }
 .loading, .sent-message, .error-message {
-    display: none;
+    display: none !important;
 }
