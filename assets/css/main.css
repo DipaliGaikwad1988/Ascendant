@@ -74,7 +74,9 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-
+.loading, .sent-message, .error-message {
+    display: none;
+}
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
