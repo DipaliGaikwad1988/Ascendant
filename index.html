@@ -241,9 +241,8 @@ Let’s build something amazing together.
           </div>
 
           <div class="col-lg-7">
-            <form action="https://formspree.io/f/mvgqvole" method="post" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" action="https://formspree.io/f/mvgqvole" method="post" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">
@@ -314,6 +313,39 @@ Let’s build something amazing together.
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Show loading
+    document.querySelector('.loading').style.display = 'block';
+    document.querySelector('.error-message').style.display = 'none';
+    document.querySelector('.sent-message').style.display = 'none';
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      document.querySelector('.loading').style.display = 'none';
+      if (response.ok) {
+        document.querySelector('.sent-message').style.display = 'block';
+        form.reset();
+      } else {
+        document.querySelector('.error-message').style.display = 'block';
+      }
+    }).catch(() => {
+      document.querySelector('.loading').style.display = 'none';
+      document.querySelector('.error-message').style.display = 'block';
+    });
+  });
+</script>
 
 </body>
 
