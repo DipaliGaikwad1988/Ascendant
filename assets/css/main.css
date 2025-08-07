@@ -74,9 +74,7 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-.loading, .sent-message, .error-message {
-    display: none;
-}
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -1170,4 +1168,7 @@ section#portfolio{
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+.loading, .sent-message, .error-message {
+    display: none;
 }
