@@ -89,7 +89,7 @@ h6 {
 .loading,
 .sent-message,
 .error-message {
-  display: none;
+  display: none!important;
 }
 
 /*--------------------------------------------------------------
