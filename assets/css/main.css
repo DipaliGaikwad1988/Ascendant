@@ -1,3 +1,15 @@
+/**
+* Template Name: iPortfolio
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Updated: Jun 29 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -74,6 +86,30 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+.loading,
+.error-message,
+.sent-message {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.loading {
+  background: #f4f4f4;
+  color: #444;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.sent-message {
+  background: #d4edda;
+  color: #155724;
+}
+
 
 /*--------------------------------------------------------------
 # Global Header
@@ -1168,7 +1204,4 @@ section#portfolio{
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
-}
-.loading, .sent-message, .error-message {
-    display: none !important;
 }
