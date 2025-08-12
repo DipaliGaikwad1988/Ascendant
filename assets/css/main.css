@@ -1,11 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -589,7 +581,7 @@ section,
     font-size: 20px;
   }
 	.hero {
-        padding: 40px 20px;  /* Less padding for smaller screens */
+        padding: 100px;  /* Less padding for smaller screens */
         min-height: auto;    /* Let it fit content if not full screen */
         text-align: center;  /* Center-align text/images */
         flex-direction: column; /* Stack items vertically */
