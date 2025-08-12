@@ -588,6 +588,12 @@ section,
   .hero p {
     font-size: 20px;
   }
+	.hero {
+        padding: 40px 20px;  /* Less padding for smaller screens */
+        min-height: auto;    /* Let it fit content if not full screen */
+        text-align: center;  /* Center-align text/images */
+        flex-direction: column; /* Stack items vertically */
+    }
 }
 
 /*--------------------------------------------------------------
