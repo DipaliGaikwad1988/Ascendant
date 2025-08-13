@@ -1049,7 +1049,7 @@ section#portfolio{
 .contact input[type=text]:focus,
 .contact input[type=email]:focus,
 .contact textarea:focus {
-  border-color: var(--accent-color);
+  border-color: #999;
 }
 
 .contact input[type=text]::placeholder,
