@@ -1034,9 +1034,9 @@ section#portfolio{
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
